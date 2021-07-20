@@ -1,11 +1,11 @@
 <template>
   <div class="home">
     <h2>Add a flick!</h2>
-    <button v-on:click="createMovie()">Create Movie</button>
+    <button v-on:click="createMovie()">Add that Movie</button>
     <h1>{{ message }}</h1>
     <div v-for="movie in movies" :key="movie.id">
       <h2>Title: {{ movie.title }}</h2>
-      <h2>Plot: {{ movie.plot }}</h2>
+      <h3>Plot: {{ movie.plot }}</h3>
     </div>
   </div>
 </template>
