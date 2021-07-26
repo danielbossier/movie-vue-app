@@ -1,7 +1,7 @@
 <template>
   <div class="movies-index">
     <div v-for="movie in movies" :key="movie.id">
-      <router-link v-bind:to="`/movies/#{movie.id}`">
+      <router-link v-bind:to="`/movies/${movie.id}`">
         <h2>Title: {{ movie.title }}</h2>
         <p>Plot: {{ movie.plot }}</p>
       </router-link>

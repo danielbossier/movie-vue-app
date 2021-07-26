@@ -5,7 +5,7 @@
       <p>{{ movie.plot }}</p>
       <p>{{ movie.year }}</p>
       <p>{{ movie.director }}</p>
-      <router-link v-bind:to="`/movies.${movie.id}/edit`"><button>Edit Movie</button></router-link>
+      <router-link v-bind:to="`/movies/${movie.id}/edit`"><button>Edit Movie</button></router-link>
       <router-link to="/movies">Back to all movies</router-link>
     </div>
   </div>
