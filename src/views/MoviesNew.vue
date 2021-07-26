@@ -6,19 +6,19 @@
         <li v-for="error in errors" v-bind:key="error">{{ error }}</li>
       </ul>
       <div>
-        <label>Title</label>
+        <label>Title:</label>
         <input type="text" v-model="newMovieParams.title" />
       </div>
       <div>
-        <label>Plot</label>
+        <label>Plot:</label>
         <input type="text" v-model="newMovieParams.plot" />
       </div>
       <div>
-        <label>Year</label>
+        <label>Year:</label>
         <input type="text" v-model="newMovieParams.year" />
       </div>
       <div>
-        <label>Director</label>
+        <label>Director:</label>
         <input type="text" v-model="newMovieParams.director" />
       </div>
       <input type="submit" value="Submit" />
