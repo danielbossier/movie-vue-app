@@ -6,6 +6,7 @@
     <div v-for="movie in movies" :key="movie.id">
       <h2>Title: {{ movie.title }}</h2>
       <h3>Plot: {{ movie.plot }}</h3>
+      <br />
     </div>
   </div>
 </template>

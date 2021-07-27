@@ -38,7 +38,7 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <a class="dropdown-item" href="/signup">Signup</a>
-              <a class="dropdown-item" href="/loging">Login</a>
+              <a class="dropdown-item" href="/login">Login</a>
               <a class="dropdown-item" href="/logout">Logout</a>
             </div>
           </li>
