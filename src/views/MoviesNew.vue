@@ -39,7 +39,6 @@ export default {
 
   methods: {
     createMovie: function () {
-      console.log("Movie created");
       axios.post("/movies", this.newMovieParams).then((response) => {
         this.$router.push("/movies");
         console.log(response.data);
