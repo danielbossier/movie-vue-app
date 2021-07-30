@@ -37,9 +37,15 @@
               Users!
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="/signup">Signup</a>
-              <a class="dropdown-item" href="/login">Login</a>
-              <a class="dropdown-item" href="/logout">Logout</a>
+              <li v-if="!isLoggedIn()">
+                <a class="dropdown-item" href="/signup">Signup</a>
+              </li>
+              <li v-if="!isLoggedIn()">
+                <a class="dropdown-item" href="/login">Login</a>
+              </li>
+              <li v-if="isLoggedIn()">
+                <a class="dropdown-item" href="/logout">Logout</a>
+              </li>
             </div>
           </li>
         </ul>
@@ -73,3 +79,20 @@ body {
   text-align: center;
 }
 </style>
+
+<script>
+export default {
+  methods: {
+    isLoggedIn: function () {
+      if (localStorage.getItem("jwt")) {
+        return true;
+      } else {
+        return false;
+      }
+    },
+    getUserId: function () {
+      return localStorage.getItem("user_id");
+    },
+  },
+};
+</script>
